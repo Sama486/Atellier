@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <title>M.Rozart</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand"><img src="/Logos/Logo-01.svg" width="100" height="100" alt="Logo" class="img-fluid navbar-Logo"></a>
+<button
+title="NavButton"
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navmenu"
+>
+<span class="navbar-toggler-icon"></span>
+</button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#galerie" class="nav-link" >Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#stil" class="nav-link ">Stil</a>
+                    </li>
+                    <li class="nav-item">   
+                        <a href="#überuns" class="nav-link ">Über uns</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-black text-light p-5 text-center p-lg-5 text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Bewundere die Kunst des einzig Warhaftigen M.Rozart! <span class="text-warning">Stöff</span></h1>
+                    <p class="lead my4">Der Brüs macht baba Kunstwerke und die haben es echt in sich, denn die sind besser als andere Kunstwerke<br/>
+                    Lasst euch in eine Welt fallen die ihr so zuvor noch nie gesehen habt.<br/>
+                    Wir bringen Kunst auf ein anderes Level! <span class="text-warning">#Levelup</span></p>
+                    <!--<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll"></button>-->
+                </div>
+
+                <img src="kunst1.jpg" alt="ein bildchen" style ="border-radius: 5%"; class="img-fluid w-50 d-none d-sm-block">
+            </div>
+        </div>
+    </section>
+    <!--Galerie-->
+    <section id="galerie" class="bg-dark">
+        <div class="container">
+            <div class="container2">
+                <h1 class="text-warning">Gallerie                 <a class="text-warning form-control-sm" href="Gallery.html" target="_blank">zur Gallerie</a></h1>
+                <div id="gallery"></div>
+            </div>
+        </div>
+    </section>
+    <div id="popup">
+        <img src="" alt="" id="selectedImage" >
+    </div>
+
+    <!--Boxes-->
+    <section class="p-5 bg-black">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div  class="card-body text-center">
+                            <div class="h1 mb-3,">
+                            <i class="bi bi-card-image"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Bilder
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sint error ipsum nesciunt veniam nisi.
+                        </p>
+                        <a href="#" class="btn btn-warning">Read More</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                            <i class="bi bi-person-square"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Über uns
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sint error ipsum nesciunt veniam nisi.
+                        </p>
+                        <a href="#" class="btn btn-dark">Read More</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Kontakt
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sint error ipsum nesciunt veniam nisi.
+                        </p>
+                        <a href="#" class="btn btn-warning">Read More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sections-->
+    <section id="Learn" class="p-5 bg-dark">
+        <div class="container">
+            <div class="row align-items-center justify-content-between  text-warning">
+                <div class="col-md">
+                    <img src="Logos/Logo-01.svg" class="img-fluid" alt="react">
+                </div>
+                 <div class="col-md p-5">
+                    <h2>Unsere Leidenschaft</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ducimus expedita architecto, quas nemo nesciunt.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta iste rem aliquam?
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read More
+                    </a>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="Learnr" class="p-5 bg-black text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                 <div class="col-md p-5">
+                    <h2>Was uns so besonders macht</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ducimus expedita architecto, quas nemo nesciunt.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta iste rem aliquam?
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                      <i class="bi bi-chevron-right"></i>  Read  More
+                    </a>
+                 </div>
+                 <div class="col-md">
+                    <img src="Logos/Logo-01.svg" class="img-fluid" alt="react">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Question Accordion -->
+<section id="Questions" class="p-5 bg-dark text-warning">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#question-1" >
+                  Where exactly are you located?
+                </button>
+              </h2>
+              <div id="question-1" class="accordion-collapse collapse bg-dark text-warning" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, cumque autem voluptatibus quis quia a, aspernatur dolore esse magnam error doloribus aut ex voluptates mollitia quisquam explicabo commodi temporibus perferendis enim iure laudantium blanditiis quos aliquam? Explicabo deserunt repudiandae quibusdam tenetur accusantium itaque quod sequi molestiae sapiente, expedita voluptatum esse.</div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#question-2" >
+                    How much does it cost to attend?
+                  </button>
+                </h2>
+                <div id="question-2" class="accordion-collapse collapse bg-dark text-warning" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, cumque autem voluptatibus quis quia a, aspernatur dolore esse magnam error doloribus aut ex voluptates mollitia quisquam explicabo commodi temporibus perferendis enim iure laudantium blanditiis quos aliquam? Explicabo deserunt repudiandae quibusdam tenetur accusantium itaque quod sequi molestiae sapiente, expedita voluptatum esse.</div>
+                </div>
+              </div>
+            <!-- Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#question-3" >
+                    What do I need to Know
+                  </button>
+                </h2>
+                <div id="question-3" class="accordion-collapse collapse bg-dark text-warning" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, cumque autem voluptatibus quis quia a, aspernatur dolore esse magnam error doloribus aut ex voluptates mollitia quisquam explicabo commodi temporibus perferendis enim iure laudantium blanditiis quos aliquam? Explicabo deserunt repudiandae quibusdam tenetur accusantium itaque quod sequi molestiae sapiente, expedita voluptatum esse.</div>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#question-4" >
+                    How Do I sign up?
+                  </button>
+                </h2>
+                <div id="question-4" class="accordion-collapse collapse bg-dark text-warning" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, cumque autem voluptatibus quis quia a, aspernatur dolore esse magnam error doloribus aut ex voluptates mollitia quisquam explicabo commodi temporibus perferendis enim iure laudantium blanditiis quos aliquam? Explicabo deserunt repudiandae quibusdam tenetur accusantium itaque quod sequi molestiae sapiente, expedita voluptatum esse.</div>
+                </div>
+              </div>
+              <!-- Item 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#question-5" >
+                    Do you help me find a job?
+                  </button>
+                </h2>
+                <div id="question-5" class="accordion-collapse collapse bg-dark text-warning" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, cumque autem voluptatibus quis quia a, aspernatur dolore esse magnam error doloribus aut ex voluptates mollitia quisquam explicabo commodi temporibus perferendis enim iure laudantium blanditiis quos aliquam? Explicabo deserunt repudiandae quibusdam tenetur accusantium itaque quod sequi molestiae sapiente, expedita voluptatum esse.</div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="Instructors" class="p-f bg-black">
+        <div class="container">
+            <h2 class="text-center text-white">Unser Team</h2>
+            <p class="lead text-center text-white mb-5">Nur Baba Leute an unseren Tischen!</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 mb-2">
+                    <div class="card bg-dark text-warning" >
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Rozart</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque totam incidunt, quis veritatis asperiores.</p>
+                            <a href="#"><i class="bi bi-twitter text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-warning mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-dark text-warning">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Sama486</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque totam incidunt, quis veritatis asperiores.</p>
+                            <a href="#"><i class="bi bi-twitter text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-warning mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-dark text-warning">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/3.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Jessi James</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque totam incidunt, quis veritatis asperiores.</p>
+                            <a href="#"><i class="bi bi-twitter text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-warning mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-dark text-warning">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/6.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Mahmoud</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque totam incidunt, quis veritatis asperiores.</p>
+                            <a href="#"><i class="bi bi-twitter text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-warning mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-warning mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5 bg-dark">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item bg-dark text-warning">
+                            <span class="fw-bold">Main Location</span> Komm einfach Platten 
+                        </li>
+                        <li class="list-group-item bg-dark text-warning">
+                            <span class="fw-bold">Enrollment Phone</span> (069) 184238
+                        </li>
+                        <li class="list-group-item bg-dark text-warning">
+                            <span class="fw-bold">Student Phone</span> (069) 733298
+                        </li>
+                        <li class="list-group-item bg-dark text-warning">
+                            <span class="fw-bold">Enrollment Email</span> Artellier@486.de
+                        </li>
+                        <li class="list-group-item bg-dark text-warning">
+                            <span class="fw-bold">Student Email</span> Artellier-Lehrling@486.de
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-5 bg-black text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Artellier</p>
+
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src='index.js'></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtYTQ4NiIsImEiOiJja3ZsMWJuOHMxMXBkMm50a2J5MnhxemRkIn0.LRuKUY4MUUbvjuLUZMOcIg';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [ 8.630281048150804,  50.1148752276852], 
+        zoom: 16,
+});
+
+const geojson = {
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [ 8.630281048150804,  50.1148752276852], 
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'Platten'
+      }
+    }
+  ]
+};
+
+// add markers to map
+for (const feature of geojson.features) {
+    // create a HTML element for each feature
+    const el = document.createElement('div');
+    el.className = 'marker';
+  
+    // make a marker for each feature and add to the map
+    new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+  }
+    </script>
+
+</body>
+</html>
